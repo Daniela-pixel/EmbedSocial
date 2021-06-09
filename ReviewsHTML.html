@@ -64,8 +64,9 @@
                         return 0;
                     });
                     data = data.filter(x => x.rating >= selectedMinRating)
-                    console.log(data)
-                    data.forEach(x => document.write(x.id + "\n"));
+                    for (i=0;i<data.length;i++)
+                        document.write((i + 1) + "<br>" + JSON.stringify(data[i]) + "<br>" + "<br>");
+
                 })
         }
     </script>
